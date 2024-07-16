@@ -19,10 +19,10 @@ function fibo(n){
     return salida
 }
 
-function numberToText(n){
+function numberToText(n,textoUsar){
     text = ""
     for(let i=1;i<=n;i++){
-        text= text + `|`
+        text= text + `${textoUsar}`
     }
     return text
 }
@@ -36,7 +36,7 @@ btn.addEventListener("click",()=>{
     let secuencia = fibo(numero)
     secuencia.forEach((dato)=>{
         let hijo = document.createElement("h3")
-        hijo.innerHTML = numberToText(dato)
+        hijo.innerHTML = numberToText(dato,"|")
         texto.appendChild(hijo)
     })
 })
