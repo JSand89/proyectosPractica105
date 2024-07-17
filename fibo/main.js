@@ -3,6 +3,16 @@ const btn = document.getElementById("btn")
 const texto = document.getElementById("texto")
 
 
+
+
+function numberToText(n,textoUsar){
+    text = ""
+    for(let i=1;i<=n;i++){
+        text= text + `${textoUsar}`
+    }
+    return text
+}
+
 function fibo(n){
     let salida =[0,1]
     if(n==1){
@@ -18,15 +28,6 @@ function fibo(n){
     }
     return salida
 }
-
-function numberToText(n,textoUsar){
-    text = ""
-    for(let i=1;i<=n;i++){
-        text= text + `${textoUsar}`
-    }
-    return text
-}
-
 entrada.addEventListener("input",(evento)=>{
     numero = evento.target.value
     console.log(numero)
