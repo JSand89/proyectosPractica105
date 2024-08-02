@@ -8,7 +8,7 @@ function pares(n){
 return n%2==0
 }
 
-
+            
 entrada.addEventListener("input",(evento)=>{
     numero = evento.target.value
     console.log(numero)
